@@ -1,2 +1,4 @@
-<time class="updated" datetime="<?= get_the_time('c'); ?>"><?= get_the_date(); ?></time>
-<p class="byline author vcard"><?= __('By', 'sage'); ?> <a href="<?= get_author_posts_url(get_the_author_meta('ID')); ?>" rel="author" class="fn"><?= get_the_author(); ?></a></p>
+<span class="btn btn-xs btn-info-outline"><span class="fa fa-clock-o"></span> <time class="updated" datetime="<?= get_the_time('c'); ?>"><?= get_the_date(); ?></time></span>
+<?php if( has_category() ) : ?>
+<span class="m-l btn btn-xs btn-success-outline"><span class="fa fa-chevron-circle-right"></span> <?php _e( 'Posted In', 'squarely' ); ?>: <?php the_category( __( ', ', 'squarely' ) ); ?></span>
+<?php endif; ?>

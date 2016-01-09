@@ -3,9 +3,11 @@
     <header>
       <h1 class="entry-title"><?php the_title(); ?></h1>
       <?php get_template_part('templates/entry-meta'); ?>
+      <hr />
     </header>
-    <div class="entry-content">
+    <div class="entry-content m-t-md m-b-lg">
       <?php the_content(); ?>
+      <hr />
     </div>
     <footer>
       <?php wp_link_pages(['before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']); ?>

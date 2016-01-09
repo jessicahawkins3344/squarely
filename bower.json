@@ -1,19 +1,29 @@
 {
-  "name": "sage",
-  "homepage": "https://roots.io/sage/",
+  "name": "Squarely",
+  "homepage": "https://jsquaredcreative.me",
   "authors": [
-    "Ben Word <ben@benword.com>"
+    "Jessica Hawkins <jessica@jsquaredcreative.me>"
   ],
   "license": "MIT",
-  "private": true,
   "dependencies": {
-    "modernizr": "2.8.2",
-    "jquery": "1.11.2",
-    "bootstrap": "3.3.4"
+    "jquery": "~2.1.4",
+    "WOW": "~1.1.2",
+    "animate.css": "3.4.0",
+    "bootstrap": "3.3.6",
+    "weather-icons": "~2.0.10",
+    "modernizr": "~2.8.2",
+    "bootstrap-progressbar": "~0.9.0",
+    "jquery-backstretch": "backstretch#~2.0.4"
   },
   "overrides": {
     "modernizr": {
       "main": "./modernizr.js"
+    },
+    "owlcarousel": {
+      "main": [
+        "./owl-carousel/owl.carousel.css",
+        "./owl-carousel/owl.carousel.min.js"
+      ]
     },
     "bootstrap": {
       "main": [
@@ -36,28 +46,9 @@
         "./fonts/glyphicons-halflings-regular.woff",
         "./fonts/glyphicons-halflings-regular.woff2"
       ]
-    },
-    "bootstrap-sass-official": {
-      "main": [
-        "./assets/stylesheets/_bootstrap.scss",
-        "./assets/javascripts/bootstrap/transition.js",
-        "./assets/javascripts/bootstrap/alert.js",
-        "./assets/javascripts/bootstrap/button.js",
-        "./assets/javascripts/bootstrap/carousel.js",
-        "./assets/javascripts/bootstrap/collapse.js",
-        "./assets/javascripts/bootstrap/dropdown.js",
-        "./assets/javascripts/bootstrap/modal.js",
-        "./assets/javascripts/bootstrap/tooltip.js",
-        "./assets/javascripts/bootstrap/popover.js",
-        "./assets/javascripts/bootstrap/scrollspy.js",
-        "./assets/javascripts/bootstrap/tab.js",
-        "./assets/javascripts/bootstrap/affix.js",
-        "./assets/fonts/bootstrap/glyphicons-halflings-regular.eot",
-        "./assets/fonts/bootstrap/glyphicons-halflings-regular.svg",
-        "./assets/fonts/bootstrap/glyphicons-halflings-regular.ttf",
-        "./assets/fonts/bootstrap/glyphicons-halflings-regular.woff",
-        "./assets/fonts/bootstrap/glyphicons-halflings-regular.woff2"
-      ]
     }
+  },
+  "resolutions": {
+    "jquery": "~2.1.4"
   }
 }

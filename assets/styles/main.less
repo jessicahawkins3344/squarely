@@ -1,17 +1,86 @@
 // Automatically injected Bower dependencies via wiredep (never manually edit this block)
 // bower:less
 @import "../../bower_components/bootstrap/less/bootstrap.less";
+@import "../../bower_components/weather-icons/less/weather-icons.less";
 // endbower
 
-@import "common/_variables";
-@import "common/_global";
-@import "components/_buttons";
-@import "components/_comments";
-@import "components/_forms";
-@import "components/_grid";
-@import "components/_wp-classes";
-@import "layouts/_header";
-@import "layouts/_sidebar";
-@import "layouts/_footer";
-@import "layouts/_pages";
-@import "layouts/_posts";
+@import "variables.less";
+@import "globals.less";
+@import "components/utilities.less";
+@import "pallet.less";
+@import "style-lib.less";
+@import "modules/helpers.less";
+
+@import "layouts/sections.less";
+@import "components/mytables.less";
+@import "components/cards.less";
+@import "components/social-card.less";
+@import "components/elements.less";
+@import "components/pricing.less";
+
+@import "modules/type.less";
+@import "modules/navbar.less";
+@import "modules/forms.less";
+@import "modules/widgets.less";
+@import "modules/icon-buttons.less";
+@import "modules/buttons.less";
+
+@import "layouts/footer.less";
+@import "layouts/spotlight.less";
+
+
+body {
+  padding-top: 70px;
+  color: gray-dark;
+      text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+//border radius creator
+.border-radius(@radius) {
+  border-radius: @radius;
+}
+//Different radius each side
+.border-radius(@top-left; @top-right; @bottom-left; @bottom-right) {
+  border-top-left-radius: @top-left;
+  border-top-right-radius: @top-right;
+  border-bottom-right-radius: @bottom-right;
+  border-bottom-left-radius: @bottom-left;
+}
+
+//Box solid color variantion creator
+.card-solid-variant(@color; @text-color: #fff) {
+  border: 1px solid @color;
+  > .card-header {
+    color: @text-color;
+    background: @color;
+    background-color: @color;
+    a,
+    .btn {
+      color: @text-color;
+    }
+  }
+}
+
+//== Class Helpers to use in code
+// --------------------------------------------------
+
+
+.hidden{
+     opacity:0;
+}
+.visible{
+     opacity:1;
+}
+
+
+.background-image-holder {
+  background: url("https://unsplash.it/3820/2762?image=532") 0 0 no-repeat;
+  background-size: cover;
+}

@@ -1,0 +1,78 @@
+/*
+ * Component: Info Box
+ * -------------------
+ */
+.social-card {
+  display: block;
+  min-height: 90px;
+  background: #fff;
+  width: 100%;
+  card-shadow: @card-cardshadow;
+  border-bottom: 0px;
+  margin-bottom: 15px;
+  small {
+    font-size: 14px;
+  }
+  .progress {
+    background: rgba(0,0,0,.2);
+    margin: 5px -10px 5px -10px;
+    height: 2px;
+    &,
+    & .progress-bar {
+      .border-radius(0);
+    }
+    .progress-bar {
+      background: #fff;
+    }
+  }
+}
+.social-card-icon {
+  display: block;
+  color: @gray-dark!important;
+  float: left;
+  height: 90px!important;
+  width: 90px!important;
+  text-align: center;
+  font-size: 45px!important;
+  line-height: 90px!important;
+  border-radius: 0px!important;
+  padding: 0px!important;
+  background: rgba(0,0,0,0.2);
+  > img {
+    max-width: 100%;
+  }
+  &:hover {
+    background: rgba(0,0,0,0.2)!important;
+    color: white!important;
+
+  }
+}
+.social-card-content {
+  padding: 5px 10px;
+  margin-left: 90px;
+  > h3 {
+    margin: 0px;
+  }
+}
+.social-card-number {
+  display: block;
+  font-weight: bold;
+  font-size: 24px;
+}
+.progress-description,
+.social-card-text {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.social-card-text {
+  text-transform: uppercase;
+}
+.social-card-more {
+  display: block;
+}
+
+.progress-description {
+  margin: 0;
+}

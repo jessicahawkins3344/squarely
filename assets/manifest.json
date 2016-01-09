@@ -1,10 +1,22 @@
 {
   "dependencies": {
     "main.js": {
+      "main": true,
+      "vendor": [
+        "assets/scripts/plugins/isotope.pkgd.js",
+        "assets/scripts/plugins/template.js"
+      ],
       "files": [
         "scripts/main.js"
+      ]
+    },
+    "backstretch-set.js": {
+      "vendor": [
+        "assets/scripts/plugins/backstretch-set.js"
       ],
-      "main": true
+      "files": [
+        "scripts/backstretch-set.js"
+      ]
     },
     "main.css": {
       "files": [
@@ -12,10 +24,18 @@
       ],
       "main": true
     },
-    "editor-style.css": {
+    "bootstrap.js": {
       "files": [
-        "styles/editor-style.less"
+        "scripts/bootstrap.js"
       ]
+    },
+    "customizer.js": {
+      "files": [
+        "scripts/customizer.js"
+      ]
+    },
+    "jquery.backstretch.js": {
+      "bower": ["jquery-backstretch"]
     },
     "jquery.js": {
       "bower": ["jquery"]
@@ -25,6 +45,6 @@
     }
   },
   "config": {
-    "devUrl": "http://example.dev"
+    "devUrl": "http://banctek.dev"
   }
 }

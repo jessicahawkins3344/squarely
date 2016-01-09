@@ -1,7 +1,7 @@
-<?php use Roots\Sage\Titles; ?>
+<?php use Squarely\Titles; ?>
 
-<div class="page-header">
-  <h1>
+<div class="object-non-visible wow fadeInUp text-center c-gray" data-animation-effect="fadeIn">
+  <h1 class="page-header">
     <?= Titles\title(); ?>
   </h1>
 </div>

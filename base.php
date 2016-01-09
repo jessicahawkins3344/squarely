@@ -1,34 +1,43 @@
 <?php
 
-use Roots\Sage\Config;
-use Roots\Sage\Wrapper;
+use Squarely\Setup;
+use Squarely\Wrapper;
 
 ?>
 
-<?php get_template_part('templates/head'); ?>
+<!doctype html>
+<html <?php language_attributes(); ?>>
+  <?php get_template_part('templates/head'); ?>
   <body <?php body_class(); ?>>
-    <!--[if lt IE 9]>
+    <!--[if IE]>
       <div class="alert alert-warning">
         <?php _e('You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.', 'sage'); ?>
       </div>
     <![endif]-->
+    <div style="text-align: right!important;">
     <?php
       do_action('get_header');
       get_template_part('templates/header');
     ?>
-    <div class="wrap container" role="document">
-      <div class="content row">
-        <main class="main" role="main">
-          <?php include Wrapper\template_path(); ?>
-        </main><!-- /.main -->
-        <?php if (Config\display_sidebar()) : ?>
-          <aside class="sidebar" role="complementary">
-            <?php include Wrapper\sidebar_path(); ?>
-          </aside><!-- /.sidebar -->
-        <?php endif; ?>
-      </div><!-- /.content -->
+    </div>
+    <section class="bg-default" style="padding: 4em!important;">
+    <div class="wrap" role="document">
+      <div class="container-fluid">
+        <div class="content row">
+          <div class="col-md-8">
+            <?php include Wrapper\template_path(); ?>
+          </div><!-- /.main -->
+          <?php if (Setup\display_sidebar()) : ?>
+            <div class="col-md-4">
+              <?php include Wrapper\sidebar_path(); ?>
+            </div><!-- /.sidebar -->
+          <?php endif; ?>
+        </div><!-- /.content -->
+      </div>
     </div><!-- /.wrap -->
+    </section>
     <?php
+      do_action('get_footer');
       get_template_part('templates/footer');
       wp_footer();
     ?>

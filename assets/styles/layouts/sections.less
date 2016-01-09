@@ -1,0 +1,277 @@
+/*-----------------------------------------------------------------------------------*/
+/*  SECTIONS
+/*-----------------------------------------------------------------------------------*/
+
+section {
+ 	.section-header {
+		padding-bottom: ((@line-height-computed / 2) - 1);
+	  	margin-bottom: @margin-big;
+	}
+	.section-content {
+		position: relative;
+		border-radius: @border-radius-none;
+	}
+}
+
+.service-card {
+	background: transparent!important;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*  SECTION TOOLS
+/*-----------------------------------------------------------------------------------*/
+
+section.tools
+{
+    text-align: center;
+    padding: 64px 84px;
+    margin:0 auto;
+}
+
+.tools .col-md-2
+{
+    height: 80px;
+    line-height: 80px;
+}
+
+.tools img
+{
+    max-width: 140px;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+    opacity: 0.4;
+    height: auto;
+}
+
+.tools img:hover
+{
+    opacity: 1;
+}
+
+.tools-block
+{
+    width: 100%;
+    padding: 60px 0 60px 0;
+    z-index: 100;
+    position: relative;
+    background-color: #ffffff;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*  SECTION HERO
+/*-----------------------------------------------------------------------------------*/
+
+section.hero {
+  overflow: hidden;
+  padding: 9em 0em 0em 0em;
+  min-height: 500px;
+  background: url('http://banctekpayments.com/wp-content/themes/grace/images/img1.jpg') no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: @gray-dark!important;
+  .title {
+  	margin-bottom: 80px;
+  	text-align: center;
+  	color: @white;
+  }
+  .features .row {
+  	margin-bottom: 40px;
+  }
+}
+
+.detail .carousel h1{
+  	font-size: 3.8em;
+}
+
+.detail .carousel h1, .detail {
+  	text-align: left;
+  	font-weight: 300;
+}
+
+.detail .carousel-control{
+  padding-top: 9em;
+  background: none;
+}
+
+.detail .app-screenshot{
+  overflow: hidden;
+  overflow: hidden;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 95px;
+  width: 320px;
+  height: 450px;
+  background: url('https://github.com/paolotripodi/Landy-v1.0/blob/master/img/iphone-front.png?raw=true') no-repeat;
+  background-size: 100%;
+  >img {
+  	margin-right: auto;
+ 	 margin-left: auto;
+  	padding-left: 4px;
+  	width: 280px;
+  }
+}
+
+.detail .carousel-indicators {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  margin-top: 9em;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding: 5px;
+  padding-bottom: 8px;
+  width: 100%;
+  border-top: 1px solid #eee;
+  background: #ffffff;
+  .active {
+  	width: 45px;
+	  height: 5px;
+	  border: none;
+	  border-radius: 0px;
+  }
+  >li {
+  	display: inline-block;
+	margin: 1px;
+	width: 45px;
+	height: 5px;
+	border: none;
+	border-radius: 0px;
+	background: #eeeeee;
+	text-indent: -999px;
+	cursor: pointer;
+  }
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*  SECTION SOCIAL
+/*-----------------------------------------------------------------------------------*/
+
+section.social-section {
+  padding: 74px 64px;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*  SECTION Quote & Detail
+/*-----------------------------------------------------------------------------------*/
+
+.page-header {
+  border-bottom: 0px!important;
+}
+
+body.page-id-10 {
+  background-color: @gray-lightest;
+}
+
+section.testimonial {
+  overflow: hidden;
+  padding: 5em 0em 0em 0em;
+  min-height: 500px;
+  background-color: #c8d8df;
+  background: url('http://banctekpayments.com/wp-content/themes/grace/images/whiteTable.jpg') right bottom no-repeat;
+  background-size: 100%;
+  color: @gray-dark!important;
+  .title {
+    margin-bottom: 80px;
+    text-align: center;
+    color: @white;
+  }
+  .features .row {
+    margin-bottom: 40px;
+  }
+}
+
+section.feature {
+  overflow: hidden;
+  padding: 5em 0em 0em 0em;
+  min-height: 500px;
+  background-color: #c8d8df;
+  background: url('../images/banctekfeature.jpg') center bottom no-repeat;
+  background-size: 100%;
+  color: @gray-dark!important;
+  .title { 
+    margin-bottom: 80px;
+    text-align: center;
+    color: @white;
+  }
+  .features .row {
+    margin-bottom: 40px;
+  }
+}
+
+section.quote {
+  overflow: hidden;
+  padding: 9em 0em 0em 0em;
+  min-height: 500px;
+  background: url('http://banctekpayments.com/wp-content/themes/grace/images/23233895.jpg') no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: @gray-dark!important;
+  .title {
+    margin-bottom: 80px;
+    text-align: center;
+    color: @white;
+  }
+  .features .row {
+    margin-bottom: 40px;
+  }
+}
+
+.quote .carousel h1, .detail {
+    text-align: left;
+    font-weight: @fw-bold;
+}
+
+.quote.carousel-control{
+  padding-top: 9em;
+  background: none;
+}
+
+.quote .app-screenshot{
+  overflow: hidden;
+  overflow: hidden;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 95px;
+  width: 320px;
+  height: 450px;
+  background: url('https://github.com/paolotripodi/Landy-v1.0/blob/master/img/iphone-front.png?raw=true') no-repeat;
+  background-size: 100%;
+  >img {
+    margin-right: auto;
+   margin-left: auto;
+    padding-left: 4px;
+    width: 280px;
+  }
+}
+
+.quote .carousel-indicators {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  margin-top: 9em;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding: 5px;
+  padding-bottom: 8px;
+  width: 100%;
+  border-top: 1px solid #eee;
+  background: #ffffff;
+  .active {
+    width: 45px;
+    height: 5px;
+    border: none;
+    border-radius: 0px;
+  }
+  >li {
+    display: inline-block;
+  margin: 1px;
+  width: 45px;
+  height: 5px;
+  border: none;
+  border-radius: 0px;
+  background: #eeeeee;
+  text-indent: -999px;
+  cursor: pointer;
+  }
+}

@@ -1,0 +1,70 @@
+section.spotlight {
+	padding: 0px!important;
+}
+
+.spotlight {
+		-moz-align-items: center;
+		-webkit-align-items: center;
+		-ms-align-items: center;
+		align-items: center;
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		background-color: @gray-lighter;
+	}
+
+.spotlight .image {
+	-moz-order: 1;
+	-webkit-order: 1;
+	-ms-order: 1;
+	order: 1;
+	border-radius: 0;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.spotlight .image img {
+	border-radius: 0;
+	width: 100%;
+	overflow: hidden;
+}
+
+.spotlight .content {
+	padding: 9em 3em;
+	-moz-order: 2;
+	-webkit-order: 2;
+	-ms-order: 2;
+	order: 2;
+}
+
+@media screen and (max-width: 980px) {
+
+	.spotlight {
+		display: block;
+	}
+
+		.spotlight br {
+			display: none;
+		}
+
+		.spotlight .image {
+			width: 100%;
+		}
+
+		.spotlight .content {
+			padding: 4em 3em 2em 3em ;
+			max-width: none;
+			text-align: center;
+			width: 100%;
+		}
+
+}
+
+@media screen and (max-width: 736px) {
+
+	.spotlight .content {
+		padding: 3em 2em 1em 2em ;
+	}
+
+}
